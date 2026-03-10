@@ -1,0 +1,17 @@
+{
+  "name": "contact-api",
+  "version": "1.0.0",
+  "description": "A Class project to create an Contract Api",
+  "license": "ISC",
+  "author": "Schnaider Jean Louis",
+  "type": "commonjs",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "dotenv": "^17.3.1",
+    "express": "^5.2.1",
+    "mongodb": "^7.1.0"
+  }
+}
