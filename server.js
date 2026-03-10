@@ -5,7 +5,7 @@ const mongoDb = require('./data/database')
 
 const port = process.env.PORT || 3000;
 
-app.use("/", (req, res) => {
+app.get("/", (req, res) => {
     res.send("Hello WOrld")
 })
 
