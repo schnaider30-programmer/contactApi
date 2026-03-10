@@ -5,7 +5,7 @@ const mongoDb = require('./data/database')
 
 const port = process.env.PORT || 3000;
 
-app.use("/users", contactRoutes)
+app.use("/contacts", contactRoutes)
 
 mongoDb.initDb((err, mongoClient) => {
     if(err) {
