@@ -5,6 +5,10 @@ const mongoDb = require('./data/database')
 
 const port = process.env.PORT || 3000;
 
+app.use("/", (req, res) => {
+    res.send("Hello WOrld")
+})
+
 app.use("/contacts", contactRoutes)
 
 mongoDb.initDb((err, mongoClient) => {
