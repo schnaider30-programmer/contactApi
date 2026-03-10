@@ -1,0 +1,23 @@
+//Localhost domain
+
+### Landing page
+GET http://localhost:3000
+
+
+### Get all contacts from server
+GET http://localhost:3000/contacts
+
+### Get one  contacts from server by Id
+GET http://localhost:3000/contacts/69af6a4637b495bc1af2b907
+
+//On Render
+
+### Landing page
+GET https://contactapi-g17e.onrender.com
+
+
+### Get all contacts from server
+GET https://contactapi-g17e.onrender.com/contacts
+
+### Get one  contacts from server by Id
+GET https://contactapi-g17e.onrender.com/contacts/69af6a4637b495bc1af2b907
