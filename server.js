@@ -1,23 +1,21 @@
-const express = require('express')
-const app = express()
-const contactRoutes = require('./routes/contacts')
-const mongoDb = require('./data/database')
+const express = require("express");
+const app = express();
+const mongoDb = require("./data/database");
+const bodyParser = require("body-parser");
 
 const port = process.env.PORT || 3000;
 
-app.get("/", (req, res) => {
-    res.send("Hello World")
-})
+app.use(bodyParser.json());
+app.use("/", require("./routes"))
 
-app.use("/contacts", contactRoutes)
+
 
 mongoDb.initDb((err, mongoClient) => {
-    if(err) {
-        console.log(err)
-    }
-    else {
-        app.listen(port, () => {
-            console.log("Database connection established and running on port:", port)
-        })
-    }
-})
+  if (err) {
+    console.log(err);
+  } else {
+    app.listen(port, () => {
+      console.log("Database connection established and running on port:", port);
+    });
+  }
+});

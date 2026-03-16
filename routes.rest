@@ -10,7 +10,35 @@ GET http://localhost:3000/contacts
 ### Get one  contacts from server by Id
 GET http://localhost:3000/contacts/69af6a4637b495bc1af2b907
 
-//On Render
+### Create Contact 
+POST  http://localhost:3000/contacts
+Content-Type: application/json
+
+{
+  "firstName": "Beauplan",
+  "lastName": "Dane Kelly",
+  "email": "beauplandane@gmail.com",
+  "favoriteColor": "brown",
+  "birthday": "2005-06-03"
+}
+
+### Update contact
+PUT http://localhost:3000/contacts/69b85e24b1039ea9f2dc65fb
+Content-Type: application/json
+
+{
+    "firstName": "Beauplan",
+    "lastName": "Dane Kelly",
+    "email": "danebeauplan@gmail.com",
+    "favoriteColor": "red",
+    "birthday": "2005-06-03"
+}
+
+### Delete Contact
+DELETE http://localhost:3000/contacts/69b85e24b1039ea9f2dc65fb
+
+
+//******************** Production: On Render ****************************
 
 ### Landing page
 GET https://contactapi-g17e.onrender.com
@@ -21,3 +49,30 @@ GET https://contactapi-g17e.onrender.com/contacts
 
 ### Get one  contacts from server by Id
 GET https://contactapi-g17e.onrender.com/contacts/69af6a4637b495bc1af2b907
+
+### Create Contact 
+POST  https://contactapi-g17e.onrender.com/contacts
+Content-Type: application/json
+
+{
+  "firstName": "Beauplan",
+  "lastName": "Dane Kelly",
+  "email": "beauplandane@gmail.com",
+  "favoriteColor": "brown",
+  "birthday": "2005-06-03"
+}
+
+### Update contact
+PUT https://contactapi-g17e.onrender.com/contacts/69b856bb0f2f68620ce2e8b4
+Content-Type: application/json
+
+{
+    "firstName": "Beauplan",
+    "lastName": "Dane Kelly",
+    "email": "danebeauplan@gmail.com",
+    "favoriteColor": "red",
+    "birthday": "2005-06-03"
+}
+
+### Delete Contact
+DELETE https://contactapi-g17e.onrender.com/contacts/69b856bb0f2f68620ce2e8b4
