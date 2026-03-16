@@ -8,7 +8,6 @@
   "host": "https://contactapi-g17e.onrender.com",
   "basePath": "/",
   "schemes": [
-    "http",
     "https"
   ],
   "paths": {
