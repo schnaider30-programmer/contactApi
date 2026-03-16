@@ -5,7 +5,7 @@
     "description": "Contact API",
     "version": "1.0.0"
   },
-  "host": "https://contactapi-g17e.onrender.com",
+  "host": "contactapi-g17e.onrender.com",
   "basePath": "/",
   "schemes": [
     "https"
